@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, hamburger {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+#logo {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: auto;
+    height: 50px;
+    text-align: left;
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+.main-header {
+    background-color: black;
+    height: 64px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 2%; 
+}
+
+body {
+    background-color: #201e2f;
+    color: white;
+    margin: 0;
+}
+
+section.overlay {
+    text-align: right;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9 ;
+}
+
+#hamburger {
+    fill: white;
+    height: 30px;
+    border: none;
+    border-radius: px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#hamburger:hover {
+    background-color:rgba(0,136,169,0.8);
+}
+
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(247, 247, 247);
+    position: fixed;
+    right: 0;
+    transition: width .5s ease;
+    white-space: nowrap;
+    z-index: 2;
+    overflow: hidden;
+    display: none; /* Add this line */
+}
+
+
+.siderbar-item {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.siderbar-item:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.siderbar-item > div {
+    padding: 0 1em;
+}
+
+.siderbar-item svg {
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px;
+    font-weight: 600;
+    align-items: center;
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+  
